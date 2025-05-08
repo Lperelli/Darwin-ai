@@ -27,10 +27,7 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       input: {
-        app: path.resolve(__dirname, 'index.html'),
-      },
-      output: {
-        manualChunks: undefined,
+        main: path.resolve(__dirname, 'main.tsx'),
       },
     },
     commonjsOptions: {
