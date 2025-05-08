@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm install vite@5.1.4 --save-dev && ./node_modules/.bin/vite build"
+  command = "npm ci && npm run build"
   publish = "dist"
 
 [build.environment]
