@@ -26,7 +26,9 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
-      input: path.resolve(__dirname, 'src/main.tsx'),
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
     },
     commonjsOptions: {
       include: [/node_modules/],
