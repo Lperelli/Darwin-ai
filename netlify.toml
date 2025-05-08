@@ -1,13 +1,11 @@
 [build]
-  command = "npm install && npm install vite@5.1.4 --save-dev && npx vite build"
+  command = "npm install && npm install vite@5.1.4 --save-dev && ./node_modules/.bin/vite build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18.18.0"
   NODE_ENV = "production"
   NPM_FLAGS = "--legacy-peer-deps"
-  PYTHON_VERSION = "3.9"
-  RUBY_VERSION = "2.7.2"
 
 [build.processing]
   skip_processing = false
