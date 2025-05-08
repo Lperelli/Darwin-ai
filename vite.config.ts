@@ -26,7 +26,12 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html'),
+      input: {
+        app: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        manualChunks: undefined,
+      },
     },
     commonjsOptions: {
       include: [/node_modules/],
