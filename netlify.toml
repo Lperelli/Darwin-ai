@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build"
+  command = "npm install typescript@5.2.2 --save-dev && npm install && npm run build"
   publish = "dist"
 
 [build.environment]
