@@ -1,12 +1,10 @@
 [build]
-  command = "rm -rf node_modules && npm install --force && npm install vite@5.1.4 @vitejs/plugin-react vite-plugin-svgr --save-dev && npm run build"
+  command = "npm run build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18.18.0"
-  NPM_FLAGS = "--legacy-peer-deps"
   NODE_ENV = "production"
-  CI = "false"
 
 [[redirects]]
   from = "/*"
