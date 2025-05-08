@@ -6,9 +6,13 @@
   NODE_VERSION = "18.18.0"
   NODE_ENV = "production"
   NPM_FLAGS = "--legacy-peer-deps"
+  GO_VERSION = ""
+  PHP_VERSION = ""
+  PYTHON_VERSION = ""
+  RUBY_VERSION = ""
 
 [build.processing]
-  skip_processing = false
+  skip_processing = true
 
 [build.processing.css]
   bundle = true
