@@ -10,6 +10,7 @@
   PHP_VERSION = ""
   PYTHON_VERSION = ""
   RUBY_VERSION = ""
+  NPM_VERSION = "9.8.1"
 
 [build.processing]
   skip_processing = true
