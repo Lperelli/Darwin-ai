@@ -30,6 +30,9 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html'),
       },
     },
+    commonjsOptions: {
+      include: [/node_modules/],
+    },
   },
   server: {
     port: 5173,
