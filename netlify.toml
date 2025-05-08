@@ -6,6 +6,25 @@
   NODE_VERSION = "18.18.0"
   NODE_ENV = "production"
   NPM_FLAGS = "--legacy-peer-deps"
+  PYTHON_VERSION = "3.9"
+  RUBY_VERSION = "2.7.2"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
 
 [[redirects]]
   from = "/*"
