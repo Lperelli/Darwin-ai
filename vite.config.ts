@@ -4,6 +4,7 @@ import path from 'path';
 import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     svgr({
@@ -27,11 +28,8 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       input: {
-        app: path.resolve(__dirname, 'index.html'),
+        main: path.resolve(__dirname, 'src/main.tsx'),
       },
-    },
-    commonjsOptions: {
-      include: [/node_modules/],
     },
   },
   server: {
