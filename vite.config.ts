@@ -26,11 +26,13 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    minify: false,
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'src/main.tsx'),
-      },
+      input: path.resolve(__dirname, 'index.html'),
     },
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom'],
   },
   server: {
     port: 5173,
